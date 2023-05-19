@@ -1,1 +1,1 @@
-web: gunicorn OUIBackend.wsgi –log-file -
+web: gunicorn OUIBackend.wsgi

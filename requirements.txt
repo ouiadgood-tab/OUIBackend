@@ -5,6 +5,7 @@ Django==4.2.1
 django-heroku==0.3.1
 djangorestframework==3.14.0
 filelock==3.12.0
+gunicorn==20.1.0
 platformdirs==3.5.1
 psycopg2==2.9.6
 pytz==2023.3
