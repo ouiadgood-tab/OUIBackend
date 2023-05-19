@@ -1,1 +1,1 @@
-web: gunicorn OUIBackend.wsgi:application
+web: gunicorn OUIBackend.wsgi
