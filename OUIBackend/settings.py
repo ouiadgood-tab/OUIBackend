@@ -11,8 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
-import dj_database_url
+
 
 
 
@@ -29,7 +28,7 @@ SECRET_KEY = 'django-insecure-92g7%p%yyih%l@@nfp7b4tj41(bgjq=wo5jh9&9u(a%)h=x)j4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['oui-backend.herokuapp.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -131,7 +130,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-#STATIC_URL = 'static/'
+STATIC_URL = 'static/'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
@@ -139,4 +138,3 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-django_heroku.settings(locals())
